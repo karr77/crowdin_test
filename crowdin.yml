@@ -1,0 +1,32 @@
+#
+# Your Crowdin credentials
+#
+# No need modify CROWDIN_PROJECT_ID and CROWDIN_PERSONAL_TOKEN, you can set them in GitHub Actions secrets
+project_id_env: 712327
+api_token_env: 8fc4856b0a8d33471ba7bdbdf674789655516cf20de3909e7aaaf116fa23b148a17fc9bdf0b95394
+base_path: .
+base_url: 'https://api.crowdin.com'
+
+#
+# Choose file structure in Crowdin
+# e.g. true or false
+#
+preserve_hierarchy: true
+
+#
+# Files configuration
+#
+files:
+  - source: /src/locales/en.json
+
+    #
+    # Where translations will be placed
+    # e.g. "/resources/%two_letters_code%/%original_file_name%"
+    #
+    translation: '/src/locales/%two_letters_code%.json'
+
+    #
+    # File type
+    # e.g. "json"
+    #
+    type: json
